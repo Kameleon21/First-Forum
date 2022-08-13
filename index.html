@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Web Development</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Web Developement Survey</h1>
+        <p id="description">Tell us about yourself </p>
+    </header>
+    <form action="" id="survey-form">
+        <!-- MAIN INFO -->
+        <fieldset class="first">
+            <label id="name-label">Enter Your Name: <input type="text" id="name" required placeholder="Name"></label>
+            <label>Enter Your Last Name: <input type="text" id=""></label>
+            <label id="email-label">Enter you Email: <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" id="email" placeholder="Email" required></label>
+            <label id="number-label">Enter your age:<input type="number" id="number" placeholder="Age" min="15" max="120"></label>
+        </fieldset>
+        <!-- Hear about? -->
+        <fieldset class="second">
+            <label> How did you hear about Coding:</label>
+               <select id="dropdown">
+                    <option value="">(Choose one)</option>
+                    <option value="Youtube">Youtube</option>
+                    <option value="Friend">Friend</option>
+                    <option value="Colage">College</option>
+                    <option value="Other">Other</option>
+               </select>
+               
+            <!-- What languate you learning? -->
+               <p>What language are you currently learning?</p>
+               <label >
+                <input type="radio" name="lang" value="Python">Python</label>
+               
+               <label><input type="radio" name="lang" value="Javascript">Javascript</label>
+
+               <label><input type="radio" name="lang" value="HTML">HTML</label>
+
+               <label><input type="radio" name="lang" value="CSS">CSS</label>
+
+               <label><input type="radio" name="lang" value="Ruby">Rub</label>
+
+
+        </fieldset>
+
+        <fieldset>
+            <p>How are you learning?</p>
+            <label><input type="checkbox" value="learn">Self-taught</label>
+            <label><input type="checkbox" value="learn">Bootcamp</label>
+            <label><input type="checkbox" value="learn">College</label>
+
+            <p>Let Us know anything extra about yourself?..</p>
+            <textarea name="thoughts" class="input-text" cols="50" rows="5" placeholder="Anything you want to add..."></textarea>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+    <footer>Developed by Kamil&#128540;</footer>
+</body>
+</html>
